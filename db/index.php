@@ -16,11 +16,11 @@ require __DIR__ . '/log.utils.php';
 require __DIR__ . '/debug.utils.php';
 require __DIR__ . '/file.utils.php';
 
-const CURRENT_GIT_SCHEMA_FILE = __DIR__ . '/../schema.sql';
-const SCHEMAS_DIR = __DIR__ . '/../schema';
-const CURRENT_SCHEMA_FILE = SCHEMAS_DIR . '/schema.sql';
+const CURRENT_GIT_SCHEMA_FILE = __DIR__ . '/schema.sql';
+const SCHEMAS_DIR = __DIR__ . '/schema';
 
-$dumpPath = __DIR__ . '/dump.sql';
+const CURRENT_SCHEMA_FILE = SCHEMAS_DIR . '/schema.sql';
+$dumpPath = __DIR__ . '/dump.sql'; // temporary dump
 $errors = [];
 $savedSchema = '';
 
@@ -49,6 +49,7 @@ if (!empty($_GET['download'])) {
 	http_response_code(404);
 }
 
+$output = '';
 if (count($errors)) {
 	$output .=
 		'<div id="error">Errors: <br>' .
@@ -63,14 +64,14 @@ if ($savedSchema) {
 	$output .= 'Schema saved!<br>' . PHP_EOL;
 	$currentSchema = $savedSchema;
 } elseif (!empty($diff)) {
-	$output .= '<textarea>' . implode(PHP_EOL, $diff) . '</textarea>';
+	$output .= '<textarea cols="100" rows="20">' . implode(PHP_EOL, $diff) . '</textarea><br>';
 	$output .= '<a href="index.php?update=1">Save changes</a><br>' . PHP_EOL;
 } else {
 	$output .= 'Schema is up to date. No new changes.<br>' . PHP_EOL;
 }
 
 if ($currentSchema != 'none') {
-$schemaName = basename($currentSchema, '.sql');
+	$schemaName = basename($currentSchema, '.sql');
 	$output .=
 		'Download saved schema: <a href="index.php?download=1">' .
 		$schemaName .
@@ -109,7 +110,7 @@ function diffSchema($dumpPath)
 
 		if (!($currentSchema = getLastSchema())) {
 			return false;
-			}
+		}
 
 		$diffArray = array();
 		@exec(
@@ -120,7 +121,7 @@ function diffSchema($dumpPath)
 
 		if ($exitCode == 2) {
 			if ($error = error_get_last()) {
-				debug($error);
+				simpleLog($error, 'ERROR');
 			}
 			return false;
 		}
@@ -143,7 +144,7 @@ function diffSchema($dumpPath)
  */
 function dbSchemaDump($dumpPath)
 {
-	require 'Mysqldump.php';
+	require __DIR__ . '/Mysqldump.php';
 	require __DIR__ . '/db.config.php';
 
 	$dump = new Ifsnop\Mysqldump\Mysqldump(
@@ -160,7 +161,7 @@ function dbSchemaDump($dumpPath)
 }
 
 /**
- * Save dump with latest schema
+ * Save dump with latest schema and make a link to it in CURRENT_SCHEMA_FILE path
  *
  * @param string $filePath source path
  *
@@ -171,7 +172,7 @@ function saveSchemaDump($filePath)
 	$saveFilePath = SCHEMAS_DIR . '/' . gmdate('Ymd-His') . '.sql';
 	if (!@copy($filePath, $saveFilePath)) {
 		if ($error = error_get_last()) {
-			debug($error);
+			simpleLog($error, 'ERROR');
 		}
 		return false;
 	}
@@ -180,7 +181,7 @@ function saveSchemaDump($filePath)
 	if (is_link(CURRENT_SCHEMA_FILE) || file_exists(CURRENT_SCHEMA_FILE)) {
 		if (!@unlink(CURRENT_SCHEMA_FILE)) {
 			if ($error = error_get_last()) {
-				debug($error);
+				simpleLog($error, 'ERROR');
 			}
 			return false;
 		}
@@ -188,15 +189,15 @@ function saveSchemaDump($filePath)
 
 	if (!@symlink($saveFilePath, CURRENT_SCHEMA_FILE)) {
 		if ($error = error_get_last()) {
-			debug($error);
+			simpleLog($error, 'ERROR');
 		}
 		return false;
 	}
 
 	if (!@copy($saveFilePath, CURRENT_GIT_SCHEMA_FILE)) {
-		debug($saveFilePath . ' to ' . CURRENT_GIT_SCHEMA_FILE);
+		simpleLog($saveFilePath . ' to ' . CURRENT_GIT_SCHEMA_FILE);
 		if ($error = error_get_last()) {
-			debug($error);
+			simpleLog($error, 'ERROR');
 		}
 	}
 
@@ -206,35 +207,51 @@ function saveSchemaDump($filePath)
 /**
  * Get filename with latest schema
  *
- * @return @false on error, or @string
+ * @return @string, 'none' if no schemas found or @false on error
  */
 function getLastSchema()
 {
 	if (!file_exists(CURRENT_SCHEMA_FILE)) {
 		// get last schema from schema dir
-		//$lastSchema = glob(SCHEMAS_DIR . '/*.sql');
-		exec('ls -td1 ' . SCHEMAS_DIR . '/*.sql', $myarray);
-		if (!$lastSchema) {
-			return false;
+		$lastSchemas = glob(SCHEMAS_DIR . '/*.sql');
+		if ($lastSchemas === false) {
+			simpleLog('glob error', 'ERROR');
+			//return false;
+		}
+		//exec('ls -td1 ' . SCHEMAS_DIR . '/*.sql', $myarray);
+		$lastSchema = empty($lastSchemas) ? '' : end($lastSchemas);
+
+		if (empty($lastSchema)) {
+			if (!file_exists(CURRENT_GIT_SCHEMA_FILE)) {
+				return 'none';
+			}
+
+			// use git schema as current schema
+			$lastSchema = SCHEMAS_DIR . '/' . gmdate('Ymd-His') . '.sql';
+			if (!@copy(CURRENT_GIT_SCHEMA_FILE, $lastSchema)) {
+				if ($error = error_get_last()) {
+					simpleLog($error, 'ERROR');
+				}
+				return false;
+			}
+		} else {
+			// TODO: compare lastSchema with git schema to pick most recent
 		}
 
-		// compare that (if any) with git schema
-		if ($lastSchema == 'none' && !file_exists(CURRENT_GIT_SCHEMA_FILE)) {
-			return 'none';
-		}
-
+		// dangling link? remove it
 		if (is_link(CURRENT_SCHEMA_FILE)) {
 			if (!@unlink(CURRENT_SCHEMA_FILE)) {
 				if ($error = error_get_last()) {
-					debug($error);
+					simpleLog($error, 'ERROR');
 				}
 				return false;
 			}
 		}
 
-		if (!@symlink(CURRENT_GIT_SCHEMA_FILE, CURRENT_SCHEMA_FILE)) {
+		// point link to the schema found
+		if (!@symlink($lastSchema, CURRENT_SCHEMA_FILE)) {
 			if ($error = error_get_last()) {
-				debug($error);
+				simpleLog($error, 'ERROR');
 			}
 			return false;
 		}
@@ -275,7 +292,7 @@ function downloadLastSchema(): bool
 		if (isset($data['error'])) {
 			abort($data['error']);
 		} else {
-			abort('Error reading ', $currentSchema);
+			abort('Error reading ' . $currentSchema);
 		}
 	}
 
@@ -308,7 +325,7 @@ function nocache()
 function abort($msg)
 {
 	http_response_code(500);
-	debug('aborting: ' . $msg);
+	simpleLog('aborting: ' . $msg, 'ERROR');
 	nocache();
 	echo '<br><br>' . $msg . '<br><br><a href="index.php">Index</a>';
 	die();

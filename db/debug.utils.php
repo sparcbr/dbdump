@@ -2,10 +2,10 @@
 const DEBUG_LOG_FILE = __DIR__ . '/debug.txt';
 const ROOT_DIR = __DIR__;
 
-function exLog($e, $val = '')
+function exLog($e, $txt = '')
 {
 	if ($e instanceof Exception) {
-		$str = empty($val) ? '' : $val . PHP_EOL;
+		$str = empty($txt) ? '' : $txt . PHP_EOL;
 		$str .= sprintf(
 			"%s: (%d): %s\n",
 			get_class($e),
@@ -13,9 +13,7 @@ function exLog($e, $val = '')
 			$e->getMessage()
 		);
 
-		//APIGeneralLog($str, 'Exception');
-
-		debugLog($str . traceToStr($e->getTrace()));
+		simpleLog($str . traceToStr($e->getTrace()), 'ERROR');
 	}
 }
 
@@ -71,6 +69,6 @@ function debugLog($txt, $type = 'DEBUG')
 			FILE_APPEND | LOCK_EX
 		);
 	} catch (Exception $e) {
-		// shouldn't happen
+		echo 'Error saving debug log: ' . $e->getMessage();
 	}
 }

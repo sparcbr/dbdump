@@ -9,7 +9,7 @@ function simpleLog($txt, $type = 'INFO')
 			FILE_APPEND | LOCK_EX
 		);
 	} catch (Exception $e) {
-		// shouldn't happen
+		echo 'Error saving log: ' . $e->getMessage();
 	}
 
 	if ($type == 'ERROR') {
