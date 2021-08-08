@@ -1,0 +1,328 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	techlivezheng	/techlivezheng@gmail.com/
+!_TAG_PROGRAM_NAME	phpctags	//
+!_TAG_PROGRAM_URL	https://github.com/techlivezheng/phpctags	/official site/
+!_TAG_PROGRAM_VERSION	0.6.1	//
+BZIP2	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const BZIP2 = 'Bzip2';$/;"	d	line:42	class:Ifsnop\Mysqldump\Mysqldump
+CURRENT_GIT_SCHEMA_FILE	/home/sparc/repos/dbdump/db/dump/index.php	/^const CURRENT_GIT_SCHEMA_FILE = __DIR__ . '/../schema.sql';$/;"	d	line:19
+CURRENT_SCHEMA_FILE	/home/sparc/repos/dbdump/db/dump/index.php	/^const CURRENT_SCHEMA_FILE = SCHEMAS_DIR . '/schema.sql';$/;"	d	line:21
+CompressBzip2	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class CompressBzip2 extends CompressManagerFactory$/;"	c	line:1214	namespace:Ifsnop\Mysqldump	inherits:CompressManagerFactory
+CompressGzip	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class CompressGzip extends CompressManagerFactory$/;"	c	line:1252	namespace:Ifsnop\Mysqldump	inherits:CompressManagerFactory
+CompressManagerFactory	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^abstract class CompressManagerFactory$/;"	c	line:1195	namespace:Ifsnop\Mysqldump
+CompressMethod	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^abstract class CompressMethod$/;"	c	line:1177	namespace:Ifsnop\Mysqldump
+CompressNone	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class CompressNone extends CompressManagerFactory$/;"	c	line:1290	namespace:Ifsnop\Mysqldump	inherits:CompressManagerFactory
+DATABASE_NAME	/home/sparc/repos/dbdump/db/db.config.sample.php	/^define('DATABASE_NAME', '');$/;"	d	line:2
+DATABASE_PASSWORD	/home/sparc/repos/dbdump/db/db.config.sample.php	/^define('DATABASE_PASSWORD', '');$/;"	d	line:4
+DATABASE_PORT	/home/sparc/repos/dbdump/db/db.config.sample.php	/^define('DATABASE_PORT', 3306);$/;"	d	line:6
+DATABASE_SERVER	/home/sparc/repos/dbdump/db/db.config.sample.php	/^define('DATABASE_SERVER', 'localhost');$/;"	d	line:5
+DATABASE_USERNAME	/home/sparc/repos/dbdump/db/db.config.sample.php	/^define('DATABASE_USERNAME', '');$/;"	d	line:3
+DEBUG_LOG_FILE	/home/sparc/repos/dbdump/db/debug.utils.php	/^const DEBUG_LOG_FILE = __DIR__ . '/debug.txt';$/;"	d	line:2
+DEFINER_RE	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const DEFINER_RE = 'DEFINER=`(?:[^`]|``)*`@`(?:[^`]|``)*`';$/;"	d	line:1587	class:Ifsnop\Mysqldump\TypeAdapterMysql
+GZIP	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const GZIP = 'Gzip';$/;"	d	line:41	class:Ifsnop\Mysqldump\Mysqldump
+Ifsnop\Mysqldump	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^namespace Ifsnop\Mysqldump;$/;"	n	line:16
+MAXLINESIZE	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const MAXLINESIZE = 1000000;$/;"	d	line:38	class:Ifsnop\Mysqldump\Mysqldump
+Mysqldump	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class Mysqldump$/;"	c	line:34	namespace:Ifsnop\Mysqldump
+NONE	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const NONE = 'None';$/;"	d	line:43	class:Ifsnop\Mysqldump\Mysqldump
+ROOT_DIR	/home/sparc/repos/dbdump/db/debug.utils.php	/^const ROOT_DIR = __DIR__;$/;"	d	line:3
+SCHEMAS_DIR	/home/sparc/repos/dbdump/db/dump/index.php	/^const SCHEMAS_DIR = __DIR__ . '/../schema';$/;"	d	line:20
+TypeAdapter	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^abstract class TypeAdapter$/;"	c	line:1325	namespace:Ifsnop\Mysqldump
+TypeAdapterDblib	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class TypeAdapterDblib extends TypeAdapterFactory$/;"	c	line:1577	namespace:Ifsnop\Mysqldump	inherits:TypeAdapterFactory
+TypeAdapterFactory	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^abstract class TypeAdapterFactory$/;"	c	line:1346	namespace:Ifsnop\Mysqldump
+TypeAdapterMysql	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class TypeAdapterMysql extends TypeAdapterFactory$/;"	c	line:1585	namespace:Ifsnop\Mysqldump	inherits:TypeAdapterFactory
+TypeAdapterPgsql	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class TypeAdapterPgsql extends TypeAdapterFactory$/;"	c	line:1573	namespace:Ifsnop\Mysqldump	inherits:TypeAdapterFactory
+TypeAdapterSqlite	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^class TypeAdapterSqlite extends TypeAdapterFactory$/;"	c	line:1581	namespace:Ifsnop\Mysqldump	inherits:TypeAdapterFactory
+UTF8	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const UTF8 = 'utf8';$/;"	d	line:46	class:Ifsnop\Mysqldump\Mysqldump
+UTF8MB4	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    const UTF8MB4 = 'utf8mb4';$/;"	d	line:47	class:Ifsnop\Mysqldump\Mysqldump
+__construct	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function __construct($/;"	m	line:111	class:Ifsnop\Mysqldump\Mysqldump	access:public
+__construct	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function __construct($dbHandler = null, $dumpSettings = array())$/;"	m	line:1365	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+__construct	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function __construct()$/;"	m	line:1218	class:Ifsnop\Mysqldump\CompressBzip2	access:public
+__construct	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function __construct()$/;"	m	line:1256	class:Ifsnop\Mysqldump\CompressGzip	access:public
+__destruct	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function __destruct()$/;"	m	line:200	class:Ifsnop\Mysqldump\Mysqldump	access:public
+abort	/home/sparc/repos/dbdump/db/dump/index.php	/^function abort($msg)$/;"	f	line:308
+add_drop_database	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function add_drop_database()$/;"	m	line:1530	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+add_drop_database	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function add_drop_database()$/;"	m	line:1938	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+add_drop_trigger	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function add_drop_trigger()$/;"	m	line:1535	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+add_drop_trigger	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function add_drop_trigger()$/;"	m	line:1946	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1460	method:Ifsnop\Mysqldump\TypeAdapterFactory::show_columns
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1628	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1820	method:Ifsnop\Mysqldump\TypeAdapterMysql::show_tables
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1829	method:Ifsnop\Mysqldump\TypeAdapterMysql::show_views
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1838	method:Ifsnop\Mysqldump\TypeAdapterMysql::show_triggers
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1845	method:Ifsnop\Mysqldump\TypeAdapterMysql::show_columns
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1852	method:Ifsnop\Mysqldump\TypeAdapterMysql::show_procedures
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1867	method:Ifsnop\Mysqldump\TypeAdapterMysql::show_events
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1891	method:Ifsnop\Mysqldump\TypeAdapterMysql::lock_table
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1903	method:Ifsnop\Mysqldump\TypeAdapterMysql::start_add_lock_table
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1915	method:Ifsnop\Mysqldump\TypeAdapterMysql::start_add_disable_keys
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1923	method:Ifsnop\Mysqldump\TypeAdapterMysql::end_add_disable_keys
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1941	method:Ifsnop\Mysqldump\TypeAdapterMysql::add_drop_database
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1949	method:Ifsnop\Mysqldump\TypeAdapterMysql::add_drop_trigger
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1956	method:Ifsnop\Mysqldump\TypeAdapterMysql::drop_table
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1963	method:Ifsnop\Mysqldump\TypeAdapterMysql::drop_view
+args	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $args = func_get_args();$/;"	v	line:1971	method:Ifsnop\Mysqldump\TypeAdapterMysql::getDatabaseHeader
+array_replace_recursive	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static function array_replace_recursive($array1, $array2)$/;"	m	line:214	class:Ifsnop\Mysqldump\Mysqldump	access:public
+backTrace	/home/sparc/repos/dbdump/db/debug.utils.php	/^	$backTrace = debug_backtrace($backTraceOpts, $limit);$/;"	v	line:28	function:debug
+backTraceOpts	/home/sparc/repos/dbdump/db/debug.utils.php	/^	$backTraceOpts = 0;$/;"	v	line:25	function:debug
+backTraceOpts	/home/sparc/repos/dbdump/db/debug.utils.php	/^	$backTraceOpts = DEBUG_BACKTRACE_IGNORE_ARGS;$/;"	v	line:26	function:debug
+backup_parameters	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function backup_parameters()$/;"	m	line:1562	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+backup_parameters	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function backup_parameters()$/;"	m	line:2006	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+c	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $c = ucfirst(strtolower($c));$/;"	v	line:1203	method:Ifsnop\Mysqldump\CompressManagerFactory::create
+c	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $c = ucfirst(strtolower($c));$/;"	v	line:1357	method:Ifsnop\Mysqldump\TypeAdapterFactory::create
+characterSet	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $characterSet = $resultSet->fetchColumn(1);$/;"	v	line:1632	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+check_parameters	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function check_parameters($num_args, $expected_num_args, $method_name)$/;"	m	line:2053	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:private
+close	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function close()$/;"	m	line:1246	class:Ifsnop\Mysqldump\CompressBzip2	access:public
+close	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function close()$/;"	m	line:1284	class:Ifsnop\Mysqldump\CompressGzip	access:public
+close	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function close()$/;"	m	line:1315	class:Ifsnop\Mysqldump\CompressNone	access:public
+colInfo	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $colInfo = array();$/;"	v	line:1986	method:Ifsnop\Mysqldump\TypeAdapterMysql::parseColumnType
+colNames	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $colNames = $this->getColumnNames($tableName);$/;"	v	line:979	method:Ifsnop\Mysqldump\Mysqldump::listValues
+colNames	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $colNames = array();$/;"	v	line:1160	method:Ifsnop\Mysqldump\Mysqldump::getColumnNames
+colParts	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $colParts = explode(" ", $colType['Type']);$/;"	v	line:1987	method:Ifsnop\Mysqldump\TypeAdapterMysql::parseColumnType
+colStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $colStmt = $this->getColumnStmt($tableName);$/;"	v	line:976	method:Ifsnop\Mysqldump\Mysqldump::listValues
+colStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $colStmt = array();$/;"	v	line:1134	method:Ifsnop\Mysqldump\Mysqldump::getColumnStmt
+collationDb	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $collationDb = $resultSet->fetchColumn(1);$/;"	v	line:1636	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+columnTypes	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $columnTypes = $this->tableColumnTypes[$tableName];$/;"	v	line:892	method:Ifsnop\Mysqldump\Mysqldump::prepareColumnValues
+columnTypes	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $columnTypes = array();$/;"	v	line:708	method:Ifsnop\Mysqldump\Mysqldump::getTableColumnTypes
+columns	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $columns = $this->dbHandler->query($/;"	v	line:709	method:Ifsnop\Mysqldump\Mysqldump::getTableColumnTypes
+commit_transaction	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function commit_transaction()$/;"	m	line:1485	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+commit_transaction	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function commit_transaction()$/;"	m	line:1883	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+compressManager	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $compressManager;$/;"	p	line:78	class:Ifsnop\Mysqldump\Mysqldump	access:private
+connect	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function connect()$/;"	m	line:280	class:Ifsnop\Mysqldump\Mysqldump	access:private
+contents	/home/sparc/repos/dbdump/db/file.utils.php	/^	$contents = file_get_contents($filePath);$/;"	v	line:20	function:readFileData
+count	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $count = 0;$/;"	v	line:992	method:Ifsnop\Mysqldump\Mysqldump::listValues
+create	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static function create($c)$/;"	m	line:1201	class:Ifsnop\Mysqldump\CompressManagerFactory	access:public
+create	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static function create($c, $dbHandler = null, $dumpSettings = array())$/;"	m	line:1355	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+createStandInTable	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function createStandInTable($viewName)$/;"	m	line:767	class:Ifsnop\Mysqldump\Mysqldump	access:public
+createTable	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $createTable = preg_replace($match, $replace, $createTable);$/;"	v	line:1683	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_table
+createTable	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $createTable = $row['Create Table'];$/;"	v	line:1679	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_table
+create_event	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_event($row)$/;"	m	line:1769	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+create_procedure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_procedure($procedureName)$/;"	m	line:1434	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+create_procedure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_procedure($row)$/;"	m	line:1748	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+create_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_table($row)$/;"	m	line:1391	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+create_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_table($row)$/;"	m	line:1673	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+create_trigger	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_trigger($row)$/;"	m	line:1724	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+create_trigger	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_trigger($triggerName)$/;"	m	line:1425	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+create_view	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_view($row)$/;"	m	line:1407	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+create_view	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function create_view($row)$/;"	m	line:1699	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+currentSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^		$currentSchema = @readlink(CURRENT_SCHEMA_FILE);$/;"	v	line:244	function:getLastSchema
+currentSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^	$currentSchema = $savedSchema;$/;"	v	line:64
+data	/home/sparc/repos/dbdump/db/dump/index.php	/^	$data = getFileDownload($/;"	v	line:267	function:downloadLastSchema
+data	/home/sparc/repos/dbdump/db/file.utils.php	/^	$data = readFileData($filePath, $validMimes);$/;"	v	line:35	function:getFileDownload
+databaseName	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $databaseName = $args[0];$/;"	v	line:1629	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+databases	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function databases()$/;"	m	line:1375	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+databases	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function databases()$/;"	m	line:1625	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+dbHandler	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $dbHandler = null;$/;"	p	line:76	class:Ifsnop\Mysqldump\Mysqldump	access:private
+dbHandler	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    protected $dbHandler = null;$/;"	p	line:1348	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:protected
+dbName	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $dbName;$/;"	p	line:89	class:Ifsnop\Mysqldump\Mysqldump	access:private
+dbSchemaDump	/home/sparc/repos/dbdump/db/dump/index.php	/^function dbSchemaDump($dumpPath)$/;"	f	line:144
+dbType	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $dbType = "";$/;"	p	line:77	class:Ifsnop\Mysqldump\Mysqldump	access:private
+debug	/home/sparc/repos/dbdump/db/debug.utils.php	/^function debug($val, $count = 4, $start = 0)$/;"	f	line:22
+debugLog	/home/sparc/repos/dbdump/db/debug.utils.php	/^function debugLog($txt, $type = 'DEBUG')$/;"	f	line:65
+definerStr	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $definerStr = $this->dumpSettings['skip-definer'] ? '' : '/*!50013 \2 */'.PHP_EOL;$/;"	v	line:1708	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_view
+definerStr	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $definerStr = $this->dumpSettings['skip-definer'] ? '' : '/*!50017 \2*/ ';$/;"	v	line:1732	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_trigger
+definerStr	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $definerStr = $this->dumpSettings['skip-definer'] ? '' : '/*!50117 \2*/ ';$/;"	v	line:1779	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+diff	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $diff = array_diff(array_keys($this->dumpSettings), array_keys($dumpSettingsDefault));$/;"	v	line:179	method:Ifsnop\Mysqldump\Mysqldump::__construct
+diffArray	/home/sparc/repos/dbdump/db/dump/index.php	/^		$diffArray = array();$/;"	v	line:114	function:diffSchema
+diffInfo	/home/sparc/repos/dbdump/db/dump/index.php	/^$diffInfo = diffSchema($dumpPath);$/;"	v	line:27
+diffSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^function diffSchema($dumpPath)$/;"	f	line:105
+downloadLastSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^function downloadLastSchema(): bool$/;"	f	line:257
+drop_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function drop_table()$/;"	m	line:1540	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+drop_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function drop_table()$/;"	m	line:1953	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+drop_view	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function drop_view()$/;"	m	line:1545	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+drop_view	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function drop_view()$/;"	m	line:1960	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+dsn	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $dsn = substr($dsn, $pos + 1);$/;"	v	line:252	method:Ifsnop\Mysqldump\Mysqldump::parseDsn
+dsn	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public $dsn;$/;"	p	line:63	class:Ifsnop\Mysqldump\Mysqldump	access:public
+dsnArray	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $dsnArray = array();$/;"	p	line:99	class:Ifsnop\Mysqldump\Mysqldump	access:private
+dump	/home/sparc/repos/dbdump/db/dump/index.php	/^	$dump = new Ifsnop\Mysqldump\Mysqldump($/;"	v	line:149	function:dbSchemaDump
+dumpPath	/home/sparc/repos/dbdump/db/dump/index.php	/^$dumpPath = __DIR__ . '/dump.sql';$/;"	v	line:23
+dumpSettings	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $dumpSettings = array();$/;"	p	line:80	class:Ifsnop\Mysqldump\Mysqldump	access:private
+dumpSettings	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    protected $dumpSettings = array();$/;"	p	line:1349	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:protected
+dumpSettingsDefault	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $dumpSettingsDefault = array($/;"	v	line:118	method:Ifsnop\Mysqldump\Mysqldump::__construct
+endListValues	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function endListValues($tableName, $count = 0)$/;"	m	line:1083	class:Ifsnop\Mysqldump\Mysqldump	access:public
+end_add_disable_keys	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function end_add_disable_keys()$/;"	m	line:1515	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+end_add_disable_keys	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function end_add_disable_keys()$/;"	m	line:1920	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+end_add_lock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function end_add_lock_table()$/;"	m	line:1505	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+end_add_lock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function end_add_lock_table()$/;"	m	line:1907	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+end_disable_autocommit	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function end_disable_autocommit()$/;"	m	line:1933	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+end_disable_foreign_keys_check	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function end_disable_foreign_keys_check()$/;"	m	line:1525	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+enums	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static $enums = array($/;"	p	line:1179	class:Ifsnop\Mysqldump\CompressMethod	access:public
+enums	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static $enums = array($/;"	p	line:1327	class:Ifsnop\Mysqldump\TypeAdapter	access:public
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^				if ($error = error_get_last()) {$/;"	v	line:228	function:getLastSchema
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^			if ($error = error_get_last()) {$/;"	v	line:122	function:diffSchema
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^			if ($error = error_get_last()) {$/;"	v	line:182	function:saveSchemaDump
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^			if ($error = error_get_last()) {$/;"	v	line:236	function:getLastSchema
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^		if ($error = error_get_last()) {$/;"	v	line:173	function:saveSchemaDump
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^		if ($error = error_get_last()) {$/;"	v	line:190	function:saveSchemaDump
+error	/home/sparc/repos/dbdump/db/dump/index.php	/^		if ($error = error_get_last()) {$/;"	v	line:198	function:saveSchemaDump
+error	/home/sparc/repos/dbdump/db/file.utils.php	/^		if ($error = error_get_last()) {$/;"	v	line:13	function:readFileData
+errors	/home/sparc/repos/dbdump/db/dump/index.php	/^$errors = [];$/;"	v	line:24
+escape	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function escape($colValue, $colType)$/;"	m	line:909	class:Ifsnop\Mysqldump\Mysqldump	access:private
+eventName	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $eventName = $row['Event'];$/;"	v	line:1776	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+eventStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $eventStmt = $eventStmtReplaced;$/;"	v	line:1787	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+eventStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $eventStmt = $row['Create Event'];$/;"	v	line:1777	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+eventStmtReplaced	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        if ($eventStmtReplaced = preg_replace($/;"	v	line:1781	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+events	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $events = array();$/;"	p	line:75	class:Ifsnop\Mysqldump\Mysqldump	access:private
+exLog	/home/sparc/repos/dbdump/db/debug.utils.php	/^function exLog($e, $val = '')$/;"	f	line:5
+exportEvents	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function exportEvents()$/;"	m	line:657	class:Ifsnop\Mysqldump\Mysqldump	access:private
+exportProcedures	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function exportProcedures()$/;"	m	line:644	class:Ifsnop\Mysqldump\Mysqldump	access:private
+exportTables	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function exportTables()$/;"	m	line:582	class:Ifsnop\Mysqldump\Mysqldump	access:private
+exportTriggers	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function exportTriggers()$/;"	m	line:631	class:Ifsnop\Mysqldump\Mysqldump	access:private
+exportViews	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function exportViews()$/;"	m	line:606	class:Ifsnop\Mysqldump\Mysqldump	access:private
+fileHandler	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $fileHandler = null;$/;"	p	line:1216	class:Ifsnop\Mysqldump\CompressBzip2	access:private
+fileHandler	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $fileHandler = null;$/;"	p	line:1254	class:Ifsnop\Mysqldump\CompressGzip	access:private
+fileHandler	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $fileHandler = null;$/;"	p	line:1292	class:Ifsnop\Mysqldump\CompressNone	access:private
+fileName	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public $fileName = 'php://output';$/;"	p	line:68	class:Ifsnop\Mysqldump\Mysqldump	access:public
+footer	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $footer = '';$/;"	v	line:432	method:Ifsnop\Mysqldump\Mysqldump::getDumpFileFooter
+fparen	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        if ($fparen = strpos($colParts[0], "(")) {$/;"	v	line:1989	method:Ifsnop\Mysqldump\TypeAdapterMysql::parseColumnType
+getColumnNames	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function getColumnNames($tableName)$/;"	m	line:1158	class:Ifsnop\Mysqldump\Mysqldump	access:public
+getColumnStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function getColumnStmt($tableName)$/;"	m	line:1132	class:Ifsnop\Mysqldump\Mysqldump	access:public
+getDatabaseHeader	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function getDatabaseHeader()$/;"	m	line:1968	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+getDatabaseStructureEvents	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDatabaseStructureEvents()$/;"	m	line:544	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getDatabaseStructureProcedures	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDatabaseStructureProcedures()$/;"	m	line:527	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getDatabaseStructureTables	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDatabaseStructureTables()$/;"	m	line:450	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getDatabaseStructureTriggers	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDatabaseStructureTriggers()$/;"	m	line:510	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getDatabaseStructureViews	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDatabaseStructureViews()$/;"	m	line:480	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getDumpFileFooter	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDumpFileFooter()$/;"	m	line:430	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getDumpFileHeader	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getDumpFileHeader()$/;"	m	line:404	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getEventStructure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getEventStructure($eventName)$/;"	m	line:863	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getFileDownload	/home/sparc/repos/dbdump/db/file.utils.php	/^function getFileDownload($filePath, $name, $validMimes, $disposition = 'inline')$/;"	f	line:33
+getLastSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^function getLastSchema()$/;"	f	line:211
+getProcedureStructure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getProcedureStructure($procedureName)$/;"	m	line:840	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getTableColumnTypes	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getTableColumnTypes($tableName)$/;"	m	line:706	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getTableStructure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getTableStructure($tableName)$/;"	m	line:672	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getTriggerStructure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getTriggerStructure($triggerName)$/;"	m	line:818	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getViewStructureTable	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getViewStructureTable($viewName)$/;"	m	line:735	class:Ifsnop\Mysqldump\Mysqldump	access:private
+getViewStructureView	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function getViewStructureView($viewName)$/;"	m	line:788	class:Ifsnop\Mysqldump\Mysqldump	access:private
+header	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $header = "-- mysqldump-php https://github.com/ifsnop/mysqldump-php".PHP_EOL.$/;"	v	line:409	method:Ifsnop\Mysqldump\Mysqldump::getDumpFileHeader
+header	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $header = '';$/;"	v	line:406	method:Ifsnop\Mysqldump\Mysqldump::getDumpFileHeader
+hookTransformColumnValue	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    protected function hookTransformColumnValue($tableName, $colName, $colValue, $row)$/;"	m	line:947	class:Ifsnop\Mysqldump\Mysqldump	access:protected
+host	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $host;$/;"	p	line:94	class:Ifsnop\Mysqldump\Mysqldump	access:private
+ignore	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ignore = $this->dumpSettings['insert-ignore'] ? '  IGNORE' : '';$/;"	v	line:990	method:Ifsnop\Mysqldump\Mysqldump::listValues
+isValid	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static function isValid($c)$/;"	m	line:1189	class:Ifsnop\Mysqldump\CompressMethod	access:public
+isValid	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public static function isValid($c)$/;"	m	line:1336	class:Ifsnop\Mysqldump\TypeAdapter	access:public
+length	/home/sparc/repos/dbdump/db/file.utils.php	/^	$length = filesize($filePath);$/;"	v	line:10	function:readFileData
+limit	/home/sparc/repos/dbdump/db/debug.utils.php	/^	$limit = $count + $start;$/;"	v	line:24	function:debug
+lineSize	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $lineSize = 0;$/;"	v	line:973	method:Ifsnop\Mysqldump\Mysqldump::listValues
+listValues	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function listValues($tableName)$/;"	m	line:968	class:Ifsnop\Mysqldump\Mysqldump	access:private
+lock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function lock_table()$/;"	m	line:1490	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+lock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function lock_table()$/;"	m	line:1888	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+match	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $match = "/AUTO_INCREMENT=[0-9]+ /s";$/;"	v	line:1681	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_table
+match	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $match = false;$/;"	v	line:563	method:Ifsnop\Mysqldump\Mysqldump::matches
+matches	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function matches($table, $arr)$/;"	m	line:561	class:Ifsnop\Mysqldump\Mysqldump	access:private
+method	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $method = __NAMESPACE__."\\"."Compress".$c;$/;"	v	line:1208	method:Ifsnop\Mysqldump\CompressManagerFactory::create
+method	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $method = __NAMESPACE__."\\"."TypeAdapter".$c;$/;"	v	line:1361	method:Ifsnop\Mysqldump\TypeAdapterFactory::create
+mime	/home/sparc/repos/dbdump/db/file.utils.php	/^	$mime = mime_content_type($filePath);$/;"	v	line:19	function:readFileData
+mysqlTypes	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public $mysqlTypes = array($/;"	p	line:1591	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+name	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $name = implode(",", $this->dumpSettings['include-tables']);$/;"	v	line:379	method:Ifsnop\Mysqldump\Mysqldump::start
+nocache	/home/sparc/repos/dbdump/db/dump/index.php	/^function nocache()$/;"	f	line:302
+onlyOnce	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $onlyOnce = true;$/;"	v	line:972	method:Ifsnop\Mysqldump\Mysqldump::listValues
+open	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function open($filename)$/;"	m	line:1228	class:Ifsnop\Mysqldump\CompressBzip2	access:public
+open	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function open($filename)$/;"	m	line:1266	class:Ifsnop\Mysqldump\CompressGzip	access:public
+open	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function open($filename)$/;"	m	line:1297	class:Ifsnop\Mysqldump\CompressNone	access:public
+parseColumnType	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function parseColumnType($colType)$/;"	m	line:1557	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+parseColumnType	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function parseColumnType($colType)$/;"	m	line:1984	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+parseDsn	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function parseDsn($dsn)$/;"	m	line:239	class:Ifsnop\Mysqldump\Mysqldump	access:private
+pass	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public $pass;$/;"	p	line:58	class:Ifsnop\Mysqldump\Mysqldump	access:public
+pdoSettings	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $pdoSettings = array();$/;"	p	line:81	class:Ifsnop\Mysqldump\Mysqldump	access:private
+pdoSettingsDefault	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $pdoSettingsDefault = array($/;"	v	line:157	method:Ifsnop\Mysqldump\Mysqldump::__construct
+prepareColumnValues	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private function prepareColumnValues($tableName, $row)$/;"	m	line:889	class:Ifsnop\Mysqldump\Mysqldump	access:private
+prepareListValues	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function prepareListValues($tableName)$/;"	m	line:1034	class:Ifsnop\Mysqldump\Mysqldump	access:public
+procedureStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $procedureStmt = $row['Create Procedure'];$/;"	v	line:1755	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_procedure
+procedures	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $procedures = array();$/;"	p	line:74	class:Ifsnop\Mysqldump\Mysqldump	access:private
+readFileData	/home/sparc/repos/dbdump/db/file.utils.php	/^function readFileData($filePath, $validMimes = '')$/;"	f	line:3
+replace	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $replace = "";$/;"	v	line:1682	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_table
+restore_parameters	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function restore_parameters()$/;"	m	line:1567	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+restore_parameters	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function restore_parameters()$/;"	m	line:2026	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+resultSet	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $resultSet = $this->dbHandler->query("SHOW VARIABLES LIKE 'character_set_database';");$/;"	v	line:1631	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+resultSet	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $resultSet = $this->dbHandler->query("SHOW VARIABLES LIKE 'collation_database';");$/;"	v	line:1635	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+resultSet	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $resultSet = $this->dbHandler->query($stmt);$/;"	v	line:987	method:Ifsnop\Mysqldump\Mysqldump::listValues
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^			$ret = "/*!40101 SET @saved_cs_client     = @@character_set_client */;".PHP_EOL.$/;"	v	line:1687	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_table
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^                $ret = "--".PHP_EOL.$/;"	v	line:677	method:Ifsnop\Mysqldump\Mysqldump::getTableStructure
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $ret = "--".PHP_EOL.$/;"	v	line:738	method:Ifsnop\Mysqldump\Mysqldump::getViewStructureTable
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $ret = "--".PHP_EOL.$/;"	v	line:791	method:Ifsnop\Mysqldump\Mysqldump::getViewStructureView
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $ret = "--".PHP_EOL.$/;"	v	line:843	method:Ifsnop\Mysqldump\Mysqldump::getProcedureStructure
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $ret = "--".PHP_EOL.$/;"	v	line:866	method:Ifsnop\Mysqldump\Mysqldump::getEventStructure
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $ret = '';$/;"	v	line:675	method:Ifsnop\Mysqldump\Mysqldump::getTableStructure
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "";$/;"	v	line:1638	method:Ifsnop\Mysqldump\TypeAdapterMysql::databases
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "";$/;"	v	line:1701	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_view
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "";$/;"	v	line:1726	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_trigger
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "";$/;"	v	line:1750	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_procedure
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "";$/;"	v	line:1771	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "";$/;"	v	line:2028	method:Ifsnop\Mysqldump\TypeAdapterMysql::restore_parameters
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;".PHP_EOL.$/;"	v	line:2008	method:Ifsnop\Mysqldump\TypeAdapterMysql::backup_parameters
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = "CREATE TABLE IF NOT EXISTS `$viewName` (".$/;"	v	line:775	method:Ifsnop\Mysqldump\Mysqldump::createStandInTable
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = array();$/;"	v	line:769	method:Ifsnop\Mysqldump\Mysqldump::createStandInTable
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = array();$/;"	v	line:891	method:Ifsnop\Mysqldump\Mysqldump::prepareColumnValues
+ret	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $ret = implode(PHP_EOL.",", $ret);$/;"	v	line:773	method:Ifsnop\Mysqldump\Mysqldump::createStandInTable
+saveFilePath	/home/sparc/repos/dbdump/db/dump/index.php	/^	$saveFilePath = SCHEMAS_DIR . '/' . gmdate('Ymd-His') . '.sql';$/;"	v	line:171	function:saveSchemaDump
+saveSchemaDump	/home/sparc/repos/dbdump/db/dump/index.php	/^function saveSchemaDump($filePath)$/;"	f	line:169
+savedSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^	$savedSchema = saveSchemaDump($dumpPath);$/;"	v	line:35
+savedSchema	/home/sparc/repos/dbdump/db/dump/index.php	/^$savedSchema = '';$/;"	v	line:25
+schemaName	/home/sparc/repos/dbdump/db/dump/index.php	/^	$schemaName = basename($currentSchema);$/;"	v	line:266	function:downloadLastSchema
+schemaName	/home/sparc/repos/dbdump/db/dump/index.php	/^$schemaName = basename($currentSchema, '.sql');$/;"	v	line:73
+sendHeaders	/home/sparc/repos/dbdump/db/dump/index.php	/^function sendHeaders($headers)$/;"	f	line:292
+setTransformColumnValueHook	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function setTransformColumnValueHook($callable)$/;"	m	line:933	class:Ifsnop\Mysqldump\Mysqldump	access:public
+setup_transaction	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function setup_transaction()$/;"	m	line:1475	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+setup_transaction	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function setup_transaction()$/;"	m	line:1873	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_columns	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_columns()$/;"	m	line:1454	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_columns	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_columns()$/;"	m	line:1842	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_create_event	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_event($eventName)$/;"	m	line:1668	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_create_procedure	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_procedure($procedureName)$/;"	m	line:1663	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_create_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_table($tableName)$/;"	m	line:1380	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_create_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_table($tableName)$/;"	m	line:1648	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_create_trigger	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_trigger($triggerName)$/;"	m	line:1416	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_create_trigger	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_trigger($triggerName)$/;"	m	line:1658	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_create_view	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_view($viewName)$/;"	m	line:1396	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_create_view	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_create_view($viewName)$/;"	m	line:1653	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_events	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_events()$/;"	m	line:1470	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_events	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_events()$/;"	m	line:1864	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_procedures	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_procedures()$/;"	m	line:1465	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_procedures	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_procedures()$/;"	m	line:1849	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_tables	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_tables()$/;"	m	line:1439	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_tables	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_tables()$/;"	m	line:1817	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_triggers	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_triggers()$/;"	m	line:1449	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_triggers	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_triggers()$/;"	m	line:1835	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+show_views	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_views()$/;"	m	line:1444	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+show_views	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function show_views()$/;"	m	line:1826	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+simpleLog	/home/sparc/repos/dbdump/db/log.utils.php	/^function simpleLog($txt, $type = 'INFO')$/;"	f	line:3
+sqlMode	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $sqlMode = $row['sql_mode'];$/;"	v	line:1778	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_event
+start	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start($filename = '')$/;"	m	line:328	class:Ifsnop\Mysqldump\Mysqldump	access:public
+start_add_disable_keys	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_add_disable_keys()$/;"	m	line:1510	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+start_add_disable_keys	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_add_disable_keys()$/;"	m	line:1912	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+start_add_lock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_add_lock_table()$/;"	m	line:1500	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+start_add_lock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_add_lock_table()$/;"	m	line:1900	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+start_disable_autocommit	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_disable_autocommit()$/;"	m	line:1928	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+start_disable_foreign_keys_check	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_disable_foreign_keys_check()$/;"	m	line:1520	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+start_transaction	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_transaction()$/;"	m	line:1480	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+start_transaction	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function start_transaction()$/;"	m	line:1878	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+status	/home/sparc/repos/dbdump/db/dump/index.php	/^	$status = downloadLastSchema();$/;"	v	line:44
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $stmt = $this->typeAdapter->show_create_table($tableName);$/;"	v	line:681	method:Ifsnop\Mysqldump\Mysqldump::getTableStructure
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $stmt = "SELECT ".implode(",", $colStmt)." FROM `$tableName`";$/;"	v	line:982	method:Ifsnop\Mysqldump\Mysqldump::listValues
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $stmt = $this->typeAdapter->show_create_event($eventName);$/;"	v	line:871	method:Ifsnop\Mysqldump\Mysqldump::getEventStructure
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $stmt = $this->typeAdapter->show_create_procedure($procedureName);$/;"	v	line:848	method:Ifsnop\Mysqldump\Mysqldump::getProcedureStructure
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $stmt = $this->typeAdapter->show_create_trigger($triggerName);$/;"	v	line:820	method:Ifsnop\Mysqldump\Mysqldump::getTriggerStructure
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $stmt = $this->typeAdapter->show_create_view($viewName);$/;"	v	line:743	method:Ifsnop\Mysqldump\Mysqldump::getViewStructureTable
+stmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $stmt = $this->typeAdapter->show_create_view($viewName);$/;"	v	line:796	method:Ifsnop\Mysqldump\Mysqldump::getViewStructureView
+str	/home/sparc/repos/dbdump/db/debug.utils.php	/^		$str = empty($val) ? '' : $val . PHP_EOL;$/;"	v	line:8	function:exLog
+str	/home/sparc/repos/dbdump/db/debug.utils.php	/^	$str = '';$/;"	v	line:39	function:traceToStr
+str	/home/sparc/repos/dbdump/db/debug.utils.php	/^	$str = PHP_EOL . print_r($val, true) . PHP_EOL;$/;"	v	line:30	function:debug
+tableColumnTypes	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $tableColumnTypes = array();$/;"	p	line:83	class:Ifsnop\Mysqldump\Mysqldump	access:private
+tables	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $tables = array();$/;"	p	line:71	class:Ifsnop\Mysqldump\Mysqldump	access:private
+traceToStr	/home/sparc/repos/dbdump/db/debug.utils.php	/^function traceToStr($trace)$/;"	f	line:37
+transformColumnValueCallable	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $transformColumnValueCallable;$/;"	p	line:84	class:Ifsnop\Mysqldump\Mysqldump	access:private
+triggerStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $triggerStmt = $triggerStmtReplaced;$/;"	v	line:1739	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_trigger
+triggerStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $triggerStmt = $row['SQL Original Statement'];$/;"	v	line:1731	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_trigger
+triggerStmtReplaced	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        if ($triggerStmtReplaced = preg_replace($/;"	v	line:1733	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_trigger
+triggers	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $triggers = array();$/;"	p	line:73	class:Ifsnop\Mysqldump\Mysqldump	access:private
+typeAdapter	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $typeAdapter;$/;"	p	line:79	class:Ifsnop\Mysqldump\Mysqldump	access:private
+unlock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function unlock_table()$/;"	m	line:1495	class:Ifsnop\Mysqldump\TypeAdapterFactory	access:public
+unlock_table	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function unlock_table()$/;"	m	line:1895	class:Ifsnop\Mysqldump\TypeAdapterMysql	access:public
+user	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public $user;$/;"	p	line:53	class:Ifsnop\Mysqldump\Mysqldump	access:public
+version	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $version;$/;"	p	line:82	class:Ifsnop\Mysqldump\Mysqldump	access:private
+viewStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^            $viewStmt = $viewStmtReplaced;$/;"	v	line:1717	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_view
+viewStmt	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        $viewStmt = $row['Create View'];$/;"	v	line:1706	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_view
+viewStmtReplaced	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^        if ($viewStmtReplaced = preg_replace($/;"	v	line:1710	method:Ifsnop\Mysqldump\TypeAdapterMysql::create_view
+views	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    private $views = array();$/;"	p	line:72	class:Ifsnop\Mysqldump\Mysqldump	access:private
+write	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function write($str)$/;"	m	line:1238	class:Ifsnop\Mysqldump\CompressBzip2	access:public
+write	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function write($str)$/;"	m	line:1276	class:Ifsnop\Mysqldump\CompressGzip	access:public
+write	/home/sparc/repos/dbdump/db/dump/Mysqldump.php	/^    public function write($str)$/;"	m	line:1307	class:Ifsnop\Mysqldump\CompressNone	access:public
