@@ -1,5 +1,5 @@
 # dbdump
-Web UI to manage mysql DB schema dumps
+Web UI to manage mysql DB schema dumps, using https://github.com/ifsnop/mysqldump-php as diff tool.
 
 ## Instructions
 Copy db dir to your project.
