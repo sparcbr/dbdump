@@ -1,5 +1,12 @@
 <?php
 
+const CURRENT_GIT_SCHEMA_FILE = __DIR__ . '/schema.sql';
+const SCHEMAS_DIR = __DIR__ . '/schema';
+const CURRENT_SCHEMA_FILE = SCHEMAS_DIR . '/schema.sql';
+require_once __DIR__ . '/db.config.php';
+ini_set('display_errors', true);
+ini_set('html_errors', true);
+
 // TODO: highlight / formatting
 // https://prismjs.com/
 // https://jush.sourceforge.io/
@@ -16,10 +23,6 @@ require __DIR__ . '/log.utils.php';
 require __DIR__ . '/debug.utils.php';
 require __DIR__ . '/file.utils.php';
 
-const CURRENT_GIT_SCHEMA_FILE = __DIR__ . '/schema.sql';
-const SCHEMAS_DIR = __DIR__ . '/schema';
-
-const CURRENT_SCHEMA_FILE = SCHEMAS_DIR . '/schema.sql';
 $dumpPath = __DIR__ . '/dump.sql'; // temporary dump
 $errors = [];
 $savedSchema = '';
@@ -29,7 +32,7 @@ if ($diffInfo === false) {
 	abort('Diff error.');
 }
 
-list($currentSchema, $diff) = $diffInfo;
+[$currentSchema, $diff] = $diffInfo;
 
 if (!empty($_GET['update']) && !empty($diff)) {
 	$savedSchema = saveSchemaDump($dumpPath);
@@ -64,7 +67,10 @@ if ($savedSchema) {
 	$output .= 'Schema saved!<br>' . PHP_EOL;
 	$currentSchema = $savedSchema;
 } elseif (!empty($diff)) {
-	$output .= '<textarea cols="100" rows="20">' . implode(PHP_EOL, $diff) . '</textarea><br>';
+	$output .=
+		'<textarea cols="100" rows="20" readonly>' .
+		implode(PHP_EOL, $diff) .
+		'</textarea><br>';
 	$output .= '<a href="index.php?update=1">Save changes</a><br>' . PHP_EOL;
 } else {
 	$output .= 'Schema is up to date. No new changes.<br>' . PHP_EOL;
@@ -79,10 +85,7 @@ if ($currentSchema != 'none') {
 		PHP_EOL;
 	$output .=
 		'Saved on ' .
-		gmdate(
-			DATE_RSS,
-			strtotime(str_replace('-', ' ', $schemaName) . "-000")
-		) .
+		gmdate(DATE_RSS, strtotime(str_replace('-', ' ', $schemaName) . '-000')) .
 		'<br>' .
 		PHP_EOL;
 }
@@ -112,9 +115,16 @@ function diffSchema($dumpPath)
 			return false;
 		}
 
-		$diffArray = array();
+		$diffArray = [];
+		if ($_GET['invert'] ?? false) {
+			$schema1 = $dumpPath;
+			$schema2 = $currentSchema;
+		} else {
+			$schema1 = $currentSchema;
+			$schema2 = $dumpPath;
+		}
 		@exec(
-			"diff -uN -I '^-- Date:' $currentSchema $dumpPath 2>&1",
+			"diff -uN -F '^CREATE' -I '^-- Date:' $schema1 $schema2 2>&1",
 			$diffArray,
 			$exitCode
 		);
@@ -130,7 +140,7 @@ function diffSchema($dumpPath)
 			// equal files
 		}
 
-		return array($currentSchema, $diffArray);
+		return [$currentSchema, $diffArray];
 	} catch (\Exception $e) {
 		exLog($e, 'DB dump: ');
 		return false;
@@ -145,7 +155,6 @@ function diffSchema($dumpPath)
 function dbSchemaDump($dumpPath)
 {
 	require __DIR__ . '/Mysqldump.php';
-	require __DIR__ . '/db.config.php';
 
 	$dump = new Ifsnop\Mysqldump\Mysqldump(
 		'mysql:host=' .
@@ -213,14 +222,14 @@ function getLastSchema()
 {
 	if (!file_exists(CURRENT_SCHEMA_FILE)) {
 		// get last schema from schema dir
-		$lastSchemas = glob(SCHEMAS_DIR . '/*.sql');
+		//exec('ls -td1 ' . SCHEMAS_DIR . '/*.sql', $lastSchemas);
+		$lastSchemas = glob(SCHEMAS_DIR . '/[1-9]*.sql');
 		if ($lastSchemas === false) {
 			simpleLog('glob error', 'ERROR');
 			//return false;
 		}
-		//exec('ls -td1 ' . SCHEMAS_DIR . '/*.sql', $myarray);
-		$lastSchema = empty($lastSchemas) ? '' : end($lastSchemas);
 
+		$lastSchema = empty($lastSchemas) ? '' : end($lastSchemas);
 		if (empty($lastSchema)) {
 			if (!file_exists(CURRENT_GIT_SCHEMA_FILE)) {
 				return 'none';
